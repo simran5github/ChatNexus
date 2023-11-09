@@ -13,7 +13,7 @@ const append = (message,position)=>{
     messageElement.classList.add(position);
     messageContainer.append(messageElement);
 
-        var currentdate = new Date(); 
+    var currentdate = new Date(); 
     var datetime = ":" + currentdate.getDate() + "/"
                 + (currentdate.getMonth()+1)  + "/" 
                 + currentdate.getFullYear() + " at "  
