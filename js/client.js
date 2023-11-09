@@ -12,6 +12,19 @@ const append = (message,position)=>{
     messageElement.classList.add('message');
     messageElement.classList.add(position);
     messageContainer.append(messageElement);
+
+        var currentdate = new Date(); 
+    var datetime = ":" + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " at "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+    const mestim = document.createElement('div');
+    mestim.innerText = datetime;
+    mestim.classList.add('tim');
+    messageElement.append(mestim);
+    
     if(position=='left'){
         audio.play();
     }
