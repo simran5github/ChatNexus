@@ -26,6 +26,10 @@ body{
 .message:hover{
     transform: scale(1.2);
 }
+.tim{
+    /* font-weight: normal; */
+    color: rgb(41, 40, 40);
+}
 .left{
     float: left;
     clear: both;
