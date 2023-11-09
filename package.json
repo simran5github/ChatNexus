@@ -4,8 +4,8 @@
   "description": "this is node server ",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start",
-    "build": "npm run build",
+    "start": "npm install nodemon",
+    "build": "nodemon .\index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Simran",
